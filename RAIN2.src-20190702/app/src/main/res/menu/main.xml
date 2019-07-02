@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/ic_action_link"
+        android:id="@+id/action_reconnect"
+        android:title="@string/dialog_button_reconnect"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_search_bt"
+        android:icon="@drawable/ic_action_search"
+        android:title="@string/action_search_bt"
+        app:showAsAction="always" />
+</menu>

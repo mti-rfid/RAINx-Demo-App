@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="#ffffff"
+    android:elevation="1dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:gravity="center_vertical"
+        android:text="@string/text_view_anti"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_fixed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_fixed" />
+
+        <RadioButton
+            android:id="@+id/radio_dynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/radio_dynamic" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/linear_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/text_view_start" />
+
+        <Spinner
+            android:id="@+id/spinner_start_q"
+            android:layout_width="150dp"
+            android:layout_height="32dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/text_view_max" />
+
+        <Spinner
+            android:id="@+id/spinner_max_q"
+            android:layout_width="150dp"
+            android:layout_height="32dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/text_view_min" />
+
+        <Spinner
+            android:id="@+id/spinner_min_q"
+            android:layout_width="150dp"
+            android:layout_height="32dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_get_q"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_get" />
+
+        <Button
+            android:id="@+id/button_set_q"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_set" />
+    </LinearLayout>
+</LinearLayout>
